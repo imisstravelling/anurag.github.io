@@ -66,13 +66,23 @@ Then visit <http://localhost:8000>. Stop the server with `Ctrl+C`.
 
 ## Deployment
 
-The site can be published as a static site, including with GitHub Pages:
+This is a static site with no compilation or dependency-installation step. Keep all HTML files and the complete `assets` directory in the repository root so the stylesheet, theme script, favicon, and CV are included in deployments.
+
+### Vercel
+
+1. Connect this GitHub repository to Vercel and use the repository root as the project root.
+2. Select **Other** as the Framework Preset; leave the Build Command unset.
+3. Deploy, then verify that `/assets/css/style.css`, `/assets/js/theme.js`, and `/assets/Anurag%20CV.pdf` load from the deployment.
+4. In the Vercel project, open **Settings → Domains** and add `dranurag.ca`.
+5. In the WHC DNS settings for the domain, add the DNS records that Vercel displays for the project. Wait for Vercel to verify the domain and issue its HTTPS certificate.
+
+The home page canonical URL is `https://dranurag.ca/`.
+
+### GitHub Pages
 
 1. Keep the HTML files and `assets` directory together.
 2. Publish the project root as the Pages source.
 3. Open the deployed home page and check navigation, the CV PDF, favicon, and theme toggle.
-
-There is no compilation or dependency-installation step. The home page canonical URL is set to `https://dranurag.ca/`, matching the site's custom domain.
 
 ## Updating content
 
