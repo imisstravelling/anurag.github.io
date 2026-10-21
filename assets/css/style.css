@@ -187,7 +187,8 @@ a:hover { text-decoration-color: var(--accent); }
   box-shadow: 0 0 0 4px var(--paper), 0 0 0 5px var(--rule);
 }
 
-.hero-intro { font-size: 1.02rem; }
+.hero-intro p,
+.skill-card p { font-size: 0.88rem; }
 .hero-intro p:last-child { margin-bottom: 0; }
 
 .lede em { font-style: italic; }
@@ -208,8 +209,7 @@ a:hover { text-decoration-color: var(--accent); }
   margin: 0 0 0.65rem;
 }
 .skill-card p {
-  font-size: 0.88rem;
-  color: var(--abstract);
+  color: var(--ink);
   margin: 0;
 }
 
