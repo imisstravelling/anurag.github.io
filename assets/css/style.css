@@ -77,20 +77,7 @@ body {
   justify-content: space-between;
   gap: 1rem;
 }
-.masthead-right {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
 
-.profile-avatar {
-  width: 4.5rem;
-  height: 4.5rem;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid var(--rule);
-  flex-shrink: 0;
-}
 .masthead h1 {
   font-size: 1.55rem;
   font-weight: 600;
