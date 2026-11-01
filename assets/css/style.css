@@ -84,11 +84,12 @@ body {
 }
 
 .profile-avatar {
-  width: 4rem;
-  height: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--rule);
+  flex-shrink: 0;
 }
 .masthead h1 {
   font-size: 1.55rem;
